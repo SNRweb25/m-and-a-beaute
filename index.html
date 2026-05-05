@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MnAbeaute · Handcrafted Soaps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="shop">
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🌿</span>
+        <div>
+          <h1><span data-site-name>MnAbeaute</span></h1>
+          <p class="tagline"><span data-site-tagline>Handcrafted Natural Soaps</span></p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Shop</a>
+        <a href="inventory.html">Inventory</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        🛒 Cart (<span id="cartCount">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="close-cart" id="closeCart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer" id="cartFooter">
+      <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
+      <button class="btn btn-primary" id="checkoutBtn">Purchase</button>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Pure. Natural. Handcrafted.</h2>
+        <p>Every bar is made with love using organic ingredients.</p>
+        <a href="#shop" class="btn btn-primary hero-btn">Shop Now</a>
+      </div>
+      <!-- Hero photo — drop images/hero.jpg into your images folder to use it -->
+      <div class="hero-photo-wrap">
+        <img src="images/market1.jpg" alt="MnAbeaute at the market"
+          class="hero-photo" onerror="this.parentElement.style.display='none'" />
+      </div>
+    </section>
+
+    <!-- ===================== ORGANIC SOAP BANNER ===================== -->
+    <section class="organic-banner">
+      <div class="organic-photo-wrap">
+        <img src="images/soap-organic.jpg" alt="Organic handcrafted soap"
+          class="organic-photo" onerror="this.style.display='none'" />
+        <!-- Shown if no photo yet -->
+        <div class="organic-photo-placeholder">🧼</div>
+      </div>
+      <div class="organic-text">
+        <span class="organic-tag">100% Organic</span>
+        <h2>Your skin is your largest organ.<br>Take care of it.</h2>
+        <p>
+          Our soaps are made with certified organic ingredients — no harsh chemicals,
+          no synthetic fragrances, no shortcuts. Just pure, nourishing bars your skin
+          will thank you for. Every ingredient is chosen with care and crafted by hand
+          right here in Carleton Place.
+        </p>
+        <div class="organic-badges">
+          <span>🌿 Organic</span>
+          <span>🐰 Cruelty-Free</span>
+          <span>♻️ Eco Packaging</span>
+          <span>🤲 Handmade</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOP GRID ===================== -->
+    <section class="products" id="shop">
+      <h2 class="section-title">Our Soaps</h2>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <!-- ===================== MARKET GALLERY ===================== -->
+    <section class="market-section">
+      <h2 class="section-title">Find Us at the Market</h2>
+      <p class="market-sub">
+        Visit us at the <strong>Carleton Place Mini Market</strong> — come say hi,
+        smell the soaps and bring some home fresh!
+      </p>
+      <div class="market-gallery">
+        <!-- Each image falls back silently if the file isn't there yet -->
+        <div class="market-photo-wrap">
+          <img src="images/market1.jpg" alt="MnAbeaute at the market"
+            onerror="this.parentElement.classList.add('no-photo')" />
+          <div class="market-photo-label">Carleton Place Mini Market</div>
+        </div>
+        <div class="market-photo-wrap">
+          <img src="images/market2.jpg" alt="Our soap display"
+            onerror="this.parentElement.classList.add('no-photo')" />
+          <div class="market-photo-label">Handcrafted with love</div>
+        </div>
+        <div class="market-photo-wrap">
+          <img src="images/market3.jpg" alt="Fresh soaps at the market"
+            onerror="this.parentElement.classList.add('no-photo')" />
+          <div class="market-photo-label">Fresh every market day</div>
+        </div>
+        <div class="market-photo-wrap">
+          <img src="images/market4.jpg" alt="MnAbeaute soap collection"
+            onerror="this.parentElement.classList.add('no-photo')" />
+          <div class="market-photo-label">Our full collection</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">🌿 <span data-site-name>MnAbeaute</span></p>
+      <p class="footer-tagline"><span data-site-tagline>Handcrafted Natural Soaps</span></p>
+      <p class="footer-copy">© 2026 MnAbeaute &middot; Carleton Place, Ontario &middot; Made with love</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

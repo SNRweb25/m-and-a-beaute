@@ -1,0 +1,12 @@
+# Private admin & owner pages — not published to the site
+admin.html
+owner.html
+owner.js
+owner.css
+
+# Separate nested repo — not part of this project
+MnABuaute/
+
+# Editor & tool folders
+.vscode/
+.claude/
