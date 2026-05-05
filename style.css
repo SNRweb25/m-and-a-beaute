@@ -471,6 +471,63 @@ nav a.active {
   border: 1px solid #e8ddd0;
 }
 
+/* ---- Founders Section ---- */
+.founders-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2.5rem;
+  background: #fffdf9;
+  border: 1px solid #e8ddd0;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.founders-img-wrap {
+  flex: 0 0 280px;
+  height: 340px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.founders-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.founders-text {
+  flex: 1;
+}
+
+.founders-text h2 {
+  font-size: 1.7rem;
+  color: #3d2e1e;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.founders-text p {
+  font-size: 0.95rem;
+  color: #5c4a32;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .founders-section {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .founders-img-wrap {
+    flex: none;
+    width: 100%;
+    height: 260px;
+  }
+}
+
 /* ---- Market Gallery ---- */
 .market-section {
   margin-top: 3rem;
